@@ -3,7 +3,7 @@
 This repository contains code and models for classifying paintings into their respective genres using deep learning. The project utilizes the **WikiArt dataset**, which consists of approximately **80,000 paintings** across **27 different art genres**.
 
 ## 📌 Project Overview
-The goal of this project is to develop machine learning models that can **automatically classify paintings** based on their artistic style. The models explore **various architectures**, ranging from simple **softmax classifiers** to **deep convolutional neural networks (CNNs)** and **pre-trained models like ResNet and EfficientNet**.
+The goal of this project is to develop Deep learning models that can **classify paintings** based on their artistic style. The models explore **various architectures**, ranging from simple **softmax classifiers** to **deep convolutional neural networks (CNNs)** and **pre-trained models like ResNet and EfficientNet**.
 
 ## 📂 Repository Structure
 ```
@@ -29,11 +29,6 @@ The goal of this project is to develop machine learning models that can **automa
 ## 📊 Dataset
 - **Source:** WikiArt dataset (~80,000 paintings)
 - **Genres Classified:** 13 (after preprocessing)
-- **Features Considered:**
-  - Colors and shades
-  - Painting tools and techniques
-  - Overall composition
-  - Artist and objects depicted
 - **Data Preprocessing:**
   - Classes with fewer than **2,000 images were removed**.
   - **Data augmentation** (flipping, rotation, brightness adjustments) applied to underrepresented classes.
@@ -65,40 +60,12 @@ The goal of this project is to develop machine learning models that can **automa
 ## 🔍 Key Findings
 - **CNNs significantly outperformed fully connected networks** due to their ability to capture spatial features.
 - **Pre-trained models like ResNet** improved classification accuracy, demonstrating the power of transfer learning.
-- **Hypernetwork models** introduced an interesting approach but did not surpass the fine-tuned ResNet50 model.
-- **Five-class classification performed better** than full multi-class classification due to reduced complexity.
 
-## 🚀 How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/AviShatkberg/Art_Style_Classification.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Open Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-4. Run `Preprocessing.ipynb` to prepare the dataset.
-5. Train models by running `Baseline_Model.ipynb`, `CNN1.ipynb`, `Resnet.ipynb`, etc.
 
 ## 🛠️ Future Improvements
 - Experiment with **Vision Transformers (ViTs)** for improved classification.
 - Implement **GAN-based augmentation** for better generalization.
 - Fine-tune hypernetwork architecture for improved performance.
-
-## 📜 Citation
-If you use this code, please cite:
-```
-@misc{artstyleclassification2025,
-  author = {Avi Shatkberg},
-  title = {Art Style Classification using Deep Learning},
-  year = {2025},
-  url = {https://github.com/AviShatkberg/Art_Style_Classification}
-}
-```
 
 ## 🤝 Acknowledgements
 - WikiArt for the dataset
