@@ -66,6 +66,7 @@ The goal of this project is to develop Deep learning models that can **classify 
 - Experiment with **Vision Transformers (ViTs)** for improved classification.
 - Implement **GAN-based augmentation** for better generalization.
 - Fine-tune hypernetwork architecture for improved performance.
+- implement style-transfer based on the model
 
 ## 🤝 Acknowledgements
 - WikiArt for the dataset
